@@ -1,5 +1,5 @@
 // API Service for FLAME INTELLIGENCE backend
-const API_BASE = '/api';
+const API_BASE = 'https://flame-intelligence-backend.onrender.com/api';
 const MISSION_SPECIALIST_ROLES = [
   'Combustion Analyst',
   'Atmosphere Analyst',
