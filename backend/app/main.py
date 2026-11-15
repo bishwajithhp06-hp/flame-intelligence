@@ -28,12 +28,8 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 )
 logger = logging.getLogger("flame_intelligence")
-logger = logging.getLogger("flame_intelligence")
-
 limiter = Limiter(key_func=get_remote_address)
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
