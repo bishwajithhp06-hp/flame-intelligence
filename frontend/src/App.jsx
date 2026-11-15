@@ -25,7 +25,7 @@ export default function App() {
   useEffect(() => {
     async function checkHealth() {
       try {
-        const res = await fetch('/api/health');
+        const res = await fetch('https://flame-intelligence-backend.onrender.com/api/health');
         if (res.ok) {
           const data = await res.json();
           setBackendHealthy(data.status === 'healthy');
