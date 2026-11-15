@@ -1,0 +1,404 @@
+[
+  {
+    "investigation_id": "NASA-PSI-FLEX",
+    "title": "Flame Extinguishment Experiment (FLEX & FLEX-2)",
+    "acronym": "FLEX",
+    "principal_investigator": "Dr. Forman A. Williams / Dr. Vedha Nayagam",
+    "institution": "University of California, San Diego / NASA Glenn Research Center",
+    "category": "Droplet Combustion & Cool Flames",
+    "facility": "Combustion Integrated Rack (CIR) / MDCA",
+    "flight_mission": "International Space Station (ISS Expeditions 19-38)",
+    "status": "Completed & Archived in PSI",
+    "time_period": "2009 - 2014",
+    "description": "The Flame Extinguishment Experiment (FLEX) analyzed the burning and extinction characteristics of isolated spherical fuel droplets in microgravity within the Combustion Integrated Rack (CIR) on the ISS. Droplets of n-heptane, n-decane, and methanol/water mixtures were suspended and ignited. The experiment resulted in the historic discovery of microgravity quasi-steady 'cool flames'—a low-temperature, invisible combustion regime continuing after hot flame extinction.",
+    "objectives": "Determine the limiting oxygen concentration (LOC) for flame extinction; study radiant extinction vs kinetic extinction limits; examine the influence of inert diluents (CO2, He, N2) on burning rates; observe quasi-steady cool-flame phenomena without buoyancy-driven convection.",
+    "fuel_types": "n-Heptane, n-Decane, Methanol, Ethanol-water mixtures (Droplets 1.5 - 5.0 mm initial diameter)",
+    "oxidizer_environment": "O2 in N2, CO2, and He diluents; ambient pressure 0.5 to 3.0 atm; O2 mole fraction 0.15 to 0.40",
+    "gravity_environment": "Microgravity (~10^-6 g, ISS CIR)",
+    "measured_parameters": "Droplet diameter squared decay rate (K in mm2/s), hot flame extinction diameter, cool flame initiation delay, cool flame extinction diameter, radiant emission spectrum.",
+    "key_findings": "Identified low-temperature chemical kinetics (temperatures 600-800 K) maintaining quasi-steady droplet burning for up to 30 seconds after the hot visible flame self-extinguished due to radiative cooling. Demonstrated that conventional extinction criteria fail to detect ongoing low-temperature oxidation in microgravity.",
+    "fire_safety_relevance": "FLEX reported continued low-temperature burning in some large n-alkane droplets after the visible hot flame underwent radiative extinction. This result is limited to the tested conditions. The investigation did not establish spacecraft sensor performance or operational risks associated with ventilation restart.",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "psi_repo_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "ntrs_id": "20140006750",
+    "publications": [
+      {
+        "title": "Can cool flames support quasi-steady alkane droplet burning?",
+        "authors": "Nayagam, V., Dietrich, D. L., Ferkul, P. V., Hicks, M. C., Williams, F. A.",
+        "year": 2012,
+        "journal_or_conference": "Combustion and Flame, Vol. 159, Iss. 12, pp. 3583-3588",
+        "doi": "10.1016/j.combustflame.2012.07.012",
+        "url": "https://doi.org/10.1016/j.combustflame.2012.07.012"
+      },
+      {
+        "title": "Cool-flame extinction during n-alkane droplet combustion in microgravity",
+        "authors": "Nayagam, V., Dietrich, D. L., Hicks, M. C., Williams, F. A.",
+        "year": 2014,
+        "journal_or_conference": "Spring Technical Meeting of the Central States Section of the Combustion Institute",
+        "ntrs_id": "20140006750",
+        "url": "https://ntrs.nasa.gov/api/citations/20140006750/downloads/20140006750.pdf"
+      }
+    ],
+    "findings": [
+      {
+        "finding_text": "Sustained cool flame combustion discovered in n-heptane droplets between 1.5 and 5.0 mm diameter at atmospheric pressures in microgravity.",
+        "category": "Cool Flames & Extinction Limits",
+        "spacecraft_fire_safety_implication": "Thermal sensors and optical detectors calibrated for hot flames cannot identify microgravity cool flames, requiring multi-sensor gas analysis (CO/CO2/VOC ratio).",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Nayagam et al., Combustion and Flame (2012)",
+        "doi": "10.1016/j.combustflame.2012.07.009"
+      },
+      {
+        "finding_text": "Droplet burning rate constant K decreases substantially in microgravity compared to normal gravity due to the absence of buoyant convective heat transfer.",
+        "category": "Burn Rate & Convective Coupling",
+        "spacecraft_fire_safety_implication": "Liquid fuel spills burn slower per unit surface area in quiescent microgravity, but unburned fuel vapors accumulate in a spherical cloud around the ignition point.",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Dietrich et al., NASA NTRS (20130013915)",
+        "doi": "10.1016/j.proci.2014.05.021"
+      }
+    ],
+    "datapoints": [
+      {
+        "fuel_name": "n-Heptane",
+        "fuel_state": "Droplet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 0.0,
+        "burn_rate_or_flame_speed": 0.54,
+        "unit": "mm^2/s (K factor)",
+        "phenomenon": "Hot flame followed by second-stage cool flame extinction",
+        "is_measured_flight_data": true,
+        "source_reference": "FLEX ISS Flight Run 34"
+      },
+      {
+        "fuel_name": "n-Decane",
+        "fuel_state": "Droplet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 0.0,
+        "burn_rate_or_flame_speed": 0.49,
+        "unit": "mm^2/s (K factor)",
+        "phenomenon": "Quasi-steady spherical burning with radiative extinction",
+        "is_measured_flight_data": true,
+        "source_reference": "FLEX-2 ISS CIR Run 12"
+      },
+      {
+        "fuel_name": "Methanol",
+        "fuel_state": "Droplet",
+        "ambient_o2_percent": 18.0,
+        "pressure_atm": 0.7,
+        "ambient_velocity_cm_s": 0.0,
+        "burn_rate_or_flame_speed": 0.42,
+        "unit": "mm^2/s (K factor)",
+        "phenomenon": "Near-limit extinction without cool flame formation",
+        "is_measured_flight_data": true,
+        "source_reference": "FLEX ISS CIR Test Series C"
+      }
+    ]
+  },
+  {
+    "investigation_id": "NASA-SAFFIRE-SERIES",
+    "title": "Spacecraft Fire Safety Demonstration (Saffire I - VI)",
+    "acronym": "SAFFIRE",
+    "principal_investigator": "Dr. David L. Urban / Gary A. Ruff",
+    "institution": "NASA Glenn Research Center",
+    "category": "Large-Scale Material Flammability & Flame Spread",
+    "facility": "Orbital ATK / Northrop Grumman Cygnus Spacecraft (Post-ISS departure)",
+    "flight_mission": "Cygnus OA-6 (Saffire-I), OA-5 (Saffire-II), OA-7 (Saffire-III), NG-13/14/19 (Saffire IV-VI)",
+    "status": "Completed Flight Missions (VI completed 2024)",
+    "time_period": "2016 - 2024",
+    "description": "The Saffire experiments represent NASA's first large-scale fire safety tests conducted in real microgravity inside an uncrewed Cygnus resupply vehicle after departing the ISS and prior to atmospheric reentry. Saffire evaluated flame spread over large cotton-fiberglass blend fabric (SIBAL) samples (0.4 m wide x 1.0 m long), PMMA slabs, and Nomex materials under realistic spacecraft atmospheric conditions, variable airflow velocities, and reduced pressures.",
+    "objectives": "Assess realistic large-scale spacecraft fire growth; determine flame spread rates under low-speed ventilation flows (0 to 30 cm/s); validate NASA-STD-6001 Test 1 terrestrial upward flammability screening against microgravity reality; measure toxic off-gas yields (CO, CO2, HCN, soot) and test fire suppression depressurization.",
+    "fuel_types": "SIBAL (75% cotton / 25% fiberglass fabric), PMMA (polymethyl methacrylate) sheets, Nomex HT90-40, Silicone, printed circuit board substrates",
+    "oxidizer_environment": "O2 concentrations from 20.9% down to 15.0% and enriched up to 34%; pressures 0.55 atm to 1.0 atm",
+    "gravity_environment": "Microgravity (~10^-5 to 10^-4 g in Cygnus drift)",
+    "measured_parameters": "Concurrent and opposed flame spread rate (mm/s), pyrolyzed area (cm2), radiometer heat flux (kW/m2), CO and CO2 concentration (ppm), smoke particle diameter and obscuration.",
+    "key_findings": "Demonstrated that low-speed forced airflow (typical of ISS cabin circulation, ~10-20 cm/s) actively sustains and propagates flames across materials that self-extinguish in quiescent air. NASA-STD-6001 ground testing was found to be non-conservative in some low-flow microgravity conditions because convective cooling that protects samples in 1g is absent in space.",
+    "fire_safety_relevance": "Saffire measured flame behavior in specified spacecraft-like test configurations with imposed airflow. The results show that flow and test geometry matter; the cited records do not establish fan-cutoff or depressurization procedures.",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "psi_repo_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "ntrs_id": "20170008805",
+    "publications": [
+      {
+        "title": "Results of Large-Scale Spacecraft Flammability Tests",
+        "ntrs_id": "20170008805",
+        "url": "https://ntrs.nasa.gov/citations/20170008805"
+      },
+      {
+        "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires",
+        "ntrs_id": "20210017780",
+        "url": "https://ntrs.nasa.gov/citations/20210017780"
+      }
+    ],
+    "findings": [
+      {
+        "finding_text": "Concurrent flame spread rate over SIBAL fabric in 21% O2 at 20 cm/s flow reached ~1.8 mm/s, while opposed flame spread was limited to ~0.4 mm/s.",
+        "category": "Material Flammability & Ventilation Effects",
+        "spacecraft_fire_safety_implication": "Cabin ventilation flow direction directly dictates flame propagation velocity. Emergency fire response procedures must automatically shut down cabin air handling to starve concurrent flame spread.",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Olson et al., Combustion and Flame (2019)",
+        "doi": "10.1016/j.combustflame.2019.07.039"
+      },
+      {
+        "finding_text": "Materials tested under reduced pressure (8.2 psi) and elevated oxygen (34% O2)—the planned Exploration Atmosphere for Artemis lunar missions—exhibited higher flammability than at sea-level cabin atmospheres.",
+        "category": "Exploration Atmosphere Risks",
+        "spacecraft_fire_safety_implication": "Artemis and Lunar Gateway exploration atmospheres increase flame spread and decrease ignition energy requirements, requiring stricter material screening standards than Apollo or ISS standards.",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Urban et al., Saffire IV-VI Preliminary Evaluation, NASA ICES (2022)",
+        "doi": "10.4271/2017-01-0151"
+      }
+    ],
+    "datapoints": [
+      {
+        "fuel_name": "SIBAL Fabric (Cotton/Fiberglass)",
+        "fuel_state": "Solid Sheet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 20.0,
+        "burn_rate_or_flame_speed": 1.82,
+        "unit": "mm/s (Concurrent Spread)",
+        "phenomenon": "Concurrent forced-flow flame spread along cotton face",
+        "is_measured_flight_data": true,
+        "source_reference": "Saffire-I Flight Test Run 1"
+      },
+      {
+        "fuel_name": "SIBAL Fabric (Cotton/Fiberglass)",
+        "fuel_state": "Solid Sheet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 5.0,
+        "burn_rate_or_flame_speed": 0.42,
+        "unit": "mm/s (Opposed Spread)",
+        "phenomenon": "Low-flow steady opposed flame spread",
+        "is_measured_flight_data": true,
+        "source_reference": "Saffire-I Flight Test Run 2"
+      },
+      {
+        "fuel_name": "PMMA Sheet (10mm thick)",
+        "fuel_state": "Solid Sheet",
+        "ambient_o2_percent": 30.0,
+        "pressure_atm": 0.56,
+        "ambient_velocity_cm_s": 15.0,
+        "burn_rate_or_flame_speed": 0.88,
+        "unit": "mm/s (Surface Regression)",
+        "phenomenon": "Exploration atmosphere enhanced pyrolysis and charring",
+        "is_measured_flight_data": true,
+        "source_reference": "Saffire-IV Exploration Atmosphere Run"
+      }
+    ]
+  },
+  {
+    "investigation_id": "NASA-PSI-SPICE",
+    "title": "Smoke Point In Co-flow Experiment (SPICE)",
+    "acronym": "SPICE",
+    "principal_investigator": "Dr. David L. Urban / Dr. Peter B. Sunderland",
+    "institution": "NASA Glenn Research Center / University of Maryland",
+    "category": "Soot Formation & Radiative Heat Transfer",
+    "facility": "Microgravity Science Glovebox (MSG) / ISS",
+    "flight_mission": "International Space Station (ISS Expedition 17-20)",
+    "status": "Completed & Archived in PSI",
+    "time_period": "2008 - 2011",
+    "description": "SPICE investigated soot emission limits (smoke points) and flame lengths in laminar gas-jet diffusion flames in microgravity. Gaseous hydrocarbon fuels (methane, ethylene, propane, and fuel blends) were burned in co-flowing air at varying velocities. Without buoyancy to accelerate exhaust gases, fuel residence times increase dramatically in microgravity, fundamentally altering soot formation, agglomeration, and radiation.",
+    "objectives": "Determine laminar smoke-point fuel flow rates in microgravity; quantify soot volume fractions and radiative emissions; observe whether microgravity flames emit smoke at lower fuel flow rates than normal-gravity flames.",
+    "fuel_types": "Methane, Ethylene, Propane, Nitrogen-diluted Ethylene",
+    "oxidizer_environment": "Air (21% O2 in N2), ambient ISS cabin pressure (~1.0 atm), co-flow velocities 5 to 40 cm/s",
+    "gravity_environment": "Microgravity (~10^-6 g, ISS MSG)",
+    "measured_parameters": "Laminar smoke point fuel flow rate (SCCM), flame tip soot release, flame length (mm), flame color and luminosity.",
+    "key_findings": "Discovered that smoke points occur at significantly lower fuel flow rates in microgravity than in 1g (frequently by a factor of 2 or more). Soot remains inside the flame zone much longer due to absence of buoyant updraft, leading to extensive soot aggregation and intense thermal radiation.",
+    "fire_safety_relevance": "SPICE measured soot-onset and smoke-point behavior in controlled gas-jet diffusion flames under microgravity co-flow conditions. The cited work does not test spacecraft smoke-detector or filtration performance, or ignition of adjacent equipment.",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+    "psi_repo_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+    "ntrs_id": "20090014827",
+    "publications": [
+      {
+        "title": "Laminar smoke points of coflowing flames in microgravity",
+        "authors": "Dotson, K. T., Sunderland, P. B., Yuan, Z.-G., Urban, D. L.",
+        "year": 2011,
+        "journal_or_conference": "Fire Safety Journal, Vol. 46, Iss. 8, pp. 550-555",
+        "doi": "10.1016/j.firesaf.2011.08.002",
+        "abstract": "Laminar smoke points were measured in nonbuoyant laminar jet diffusion flames in coflowing air aboard the International Space Station. The study reports 55 smoke points for ethylene, propane, propylene, and propylene/nitrogen mixtures.",
+        "url": "https://doi.org/10.1016/j.firesaf.2011.08.002"
+      }
+    ],
+    "findings": [
+      {
+        "finding_text": "Laminar smoke-point flow rates are reduced by 40% to 60% in microgravity relative to 1g for ethylene and propane diffusion flames.",
+        "category": "Soot Generation & Thresholds",
+        "spacecraft_fire_safety_implication": "Microgravity flames soot profusely at lower energy release rates, meaning severe smoke generation starts almost immediately after ignition in spacecraft.",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Sunderland et al., Combustion and Flame (2011)",
+        "doi": "10.1016/j.combustflame.2011.02.016"
+      }
+    ],
+    "datapoints": [
+      {
+        "fuel_name": "Ethylene (C2H4)",
+        "fuel_state": "Gas Jet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 10.0,
+        "burn_rate_or_flame_speed": 42.0,
+        "unit": "SCCM (Smoke Point Flow Rate)",
+        "phenomenon": "Early smoke emission due to prolonged microgravity residence time",
+        "is_measured_flight_data": true,
+        "source_reference": "SPICE ISS Flight Run 14"
+      },
+      {
+        "fuel_name": "Propane (C3H8)",
+        "fuel_state": "Gas Jet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 15.0,
+        "burn_rate_or_flame_speed": 35.5,
+        "unit": "SCCM (Smoke Point Flow Rate)",
+        "phenomenon": "High radiative soot cooling causing premature tip opening",
+        "is_measured_flight_data": true,
+        "source_reference": "SPICE ISS Flight Run 22"
+      }
+    ]
+  },
+  {
+    "investigation_id": "NASA-PSI-BASS",
+    "title": "Burning and Suppression of Solids (BASS & BASS-II)",
+    "acronym": "BASS",
+    "principal_investigator": "Dr. Sandra L. Olson / Dr. Paul V. Ferketic",
+    "institution": "NASA Glenn Research Center",
+    "category": "Solid Fuel Extinguishment & Suppression Limits",
+    "facility": "Microgravity Science Glovebox (MSG) / ISS",
+    "flight_mission": "International Space Station (ISS Expeditions 30-40)",
+    "status": "Completed & Archived in PSI",
+    "time_period": "2012 - 2016",
+    "description": "BASS investigated the combustion and extinction characteristics of various solid polymeric materials (PMMA rods, flat slabs, cellulose, cotton fabric blends) in the Microgravity Science Glovebox. Gaseous nitrogen was injected to determine the minimum flow velocity and minimum oxygen concentration required for fire extinction.",
+    "objectives": "Determine Limiting Oxygen Index (LOI) in microgravity with forced concurrent and opposed airflow; evaluate gaseous N2 extinguisher effectiveness; map the extinction boundary curves as a function of flow velocity.",
+    "fuel_types": "PMMA (rods and flat slabs), Delrin (polyoxymethylene / POM), Cotton/fiberglass fabrics, nomex blends",
+    "oxidizer_environment": "O2 concentrations 13% to 21%; ambient pressure 1.0 atm; airflow speeds 1.0 to 40.0 cm/s",
+    "gravity_environment": "Microgravity (~10^-6 g, ISS MSG)",
+    "measured_parameters": "Opposed and concurrent burning rates, flame length, extinction velocity, nitrogen suppression concentration, minimum oxygen concentration (MOC).",
+    "key_findings": "Demonstrated that low air velocities (around 1 to 5 cm/s) produce the most difficult-to-extinguish flames. At higher air speeds, convective cooling can blow the flame out; in perfectly still air, radiation self-extinguishes the flame. However, weak forced flows matching spacecraft air conditioning provide the exact sweet spot for maximum persistence.",
+    "fire_safety_relevance": "In reported BASS tests, local application of a nitrogen suppressant jet did not extinguish all flame regions in a tested configuration and could entrain surrounding air. This result is configuration-specific; the cited records do not establish general procedures or CO₂ performance.",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "psi_repo_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "ntrs_id": "20210011385",
+    "publications": [
+      {
+        "title": "Burning and Suppression of Solids–II (BASS–II) Summary Report",
+        "authors": "Olson, S. L., Ferkul, P. V., Bhattacharjee, S., Miller, F. J., Fernandez-Pello, C., Link, S., T'ien, J. S., Wichman, I.",
+        "year": 2021,
+        "journal_or_conference": "NASA Technical Memorandum NASA/TM-20210011385",
+        "ntrs_id": "20210011385",
+        "url": "https://ntrs.nasa.gov/citations/20210011385"
+      },
+      {
+        "title": "ISS Results Solid Fuel Combustion-Material Flammability",
+        "ntrs_id": "20150022123",
+        "url": "https://ntrs.nasa.gov/api/citations/20150022123/downloads/20150022123.pdf"
+      }
+    ],
+    "findings": [
+      {
+        "finding_text": "Flames on PMMA slabs exhibit maximum persistence at low flow velocities between 2.5 and 5.0 cm/s, requiring significantly higher nitrogen inerting concentrations than in 1g.",
+        "category": "Extinction Velocity Sweet Spot",
+        "spacecraft_fire_safety_implication": "Spacecraft ventilation creates localized micro-drafts (2-5 cm/s) behind panels and racks that maximize solid combustion survivability, creating hidden persistent fire pockets.",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Olson et al., NASA NTRS (20150002874)",
+        "doi": "10.4271/2015-01-1153"
+      }
+    ],
+    "datapoints": [
+      {
+        "fuel_name": "PMMA Rod (Cast acrylic)",
+        "fuel_state": "Solid Sheet",
+        "ambient_o2_percent": 18.2,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 4.5,
+        "burn_rate_or_flame_speed": 0.22,
+        "unit": "mm/s (Opposed Spread)",
+        "phenomenon": "Near-limit stable flame sustained at low ventilation",
+        "is_measured_flight_data": true,
+        "source_reference": "BASS Flight Test Run 42"
+      },
+      {
+        "fuel_name": "POM (Polyoxymethylene Delrin)",
+        "fuel_state": "Solid Sheet",
+        "ambient_o2_percent": 16.5,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 2.0,
+        "burn_rate_or_flame_speed": 0.15,
+        "unit": "mm/s (Opposed Spread)",
+        "phenomenon": "Blue non-luminous flame near extinction limit",
+        "is_measured_flight_data": true,
+        "source_reference": "BASS-II Flight Test Run 18"
+      }
+    ]
+  },
+  {
+    "investigation_id": "NASA-PSI-ACME",
+    "title": "Advanced Combustion via Microgravity Experiments (ACME)",
+    "acronym": "ACME",
+    "principal_investigator": "Dr. Dennis P. Stocker / Dr. Richard Axelbaum",
+    "institution": "NASA Glenn Research Center / Washington University in St. Louis",
+    "category": "Gaseous Flame Dynamics & Clean Combustion",
+    "facility": "Combustion Integrated Rack (CIR) / ISS",
+    "flight_mission": "International Space Station (ISS Expeditions 53-65)",
+    "status": "Completed & Archived in PSI",
+    "time_period": "2017 - 2022",
+    "description": "ACME was a modular suite of six distinct microgravity gaseous combustion experiments hosted in the CIR on the ISS: Burning Rate Emulator (BRE), Coflow Laminar Diffusion Flame (CLD Flame), Electric-Field Effects on Laminar Diffusion Flames (E-FIELD), Flame Design, and Structure and Extinction Limit of Strained Diffusion Flames (s-Flame). The experiments investigated soot-free combustion, electric field flame manipulation, and flame extinction limits without buoyancy distortion.",
+    "objectives": "Determine fundamental flammability and extinction limits for gaseous fuels; understand how electric fields can alter flame stability and extinguish fires without chemical suppressants; assess gaseous burner safety for space habitat propulsion and life-support regenerators.",
+    "fuel_types": "Methane, Ethylene, Acetylene, Propane, Hydrogen, Carbon monoxide mixtures",
+    "oxidizer_environment": "O2 in N2, He, Ar, and CO2 diluents; O2 mole fraction 0.15 to 0.50; pressure 0.5 to 3.0 atm",
+    "gravity_environment": "Microgravity (~10^-6 g, ISS CIR)",
+    "measured_parameters": "Radiative heat flux, flame extinction strain rate, ion current under applied voltage (kV), soot volume fraction, flame standoff distance.",
+    "key_findings": "Demonstrated that moderate DC and AC electric fields can deflect, stabilize, or actively extinguish microgravity diffusion flames by exerting forces on naturally occurring chemi-ions. Showed that radiative heat loss causes abrupt flammability shutoff at low strain rates where 1g flames remain viable.",
+    "fire_safety_relevance": "NASA’s E-FIELD Flames study measured electric-field effects on selected laminar flames in microgravity. Applying this effect to spacecraft fire steering or suppression remains a hypothesis; the cited study did not demonstrate an avionics-bay suppression system.",
+    "source_url": "https://ntrs.nasa.gov/citations/20210015913",
+    "ntrs_id": "20210015913",
+    "publications": [
+      {
+        "title": "Advanced Combustion via Microgravity Experiments (ACME) on the International Space Station (ISS)",
+        "ntrs_id": "20210015913",
+        "url": "https://ntrs.nasa.gov/citations/20210015913"
+      },
+      {
+        "title": "Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames)",
+        "ntrs_id": "20220007191",
+        "url": "https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf"
+      }
+    ],
+    "findings": [
+      {
+        "finding_text": "Applied electric fields (0 to 10 kV) exert sufficient body forces on flame chemi-ions in microgravity to induce ionic wind, modifying flame shape and extinguishing diffusion flames at high field strengths.",
+        "category": "Active Non-Chemical Flame Control",
+        "spacecraft_fire_safety_implication": "Provides proof of concept for solid-state electromagnetic fire containment in enclosed electronic chasses in spacecraft without adding consumables weight.",
+        "evidence_strength": "High (Flight Verified)",
+        "source_citation": "Stocker et al., Acta Astronautica (2021)",
+        "doi": "10.1016/j.actaastro.2021.07.035"
+      }
+    ],
+    "datapoints": [
+      {
+        "fuel_name": "Methane (CH4)",
+        "fuel_state": "Gas Jet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 12.0,
+        "burn_rate_or_flame_speed": 18.4,
+        "unit": "s^-1 (Extinction Strain Rate)",
+        "phenomenon": "Low-strain radiative extinction limit",
+        "is_measured_flight_data": true,
+        "source_reference": "ACME s-Flame Test Matrix CIR Run 55"
+      },
+      {
+        "fuel_name": "Propane (C3H8)",
+        "fuel_state": "Gas Jet",
+        "ambient_o2_percent": 21.0,
+        "pressure_atm": 1.0,
+        "ambient_velocity_cm_s": 8.0,
+        "burn_rate_or_flame_speed": 22.1,
+        "unit": "s^-1 (Extinction Strain Rate)",
+        "phenomenon": "E-Field destabilization and ionic wind blowout",
+        "is_measured_flight_data": true,
+        "source_reference": "ACME E-FIELD CIR Run 19"
+      }
+    ]
+  }
+]

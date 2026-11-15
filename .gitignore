@@ -1,0 +1,49 @@
+# Keep local API credentials and developer overrides out of source control.
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local Python environments, bytecode, and test/tool caches.
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local SQLite databases and journal sidecars.
+**/flame_intelligence.db*
+**/*.db
+**/*.db-wal
+**/*.db-shm
+**/*.sqlite
+**/*.sqlite3
+**/*.sqlite-wal
+**/*.sqlite-shm
+
+# Dependencies, build output, and local logs.
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+**/coverage/
+*.log
+**/logs/
+
+# Local secret material. Keep the .env.example templates trackable above.
+**/.secrets/
+*.secret
+*.pem
+*.key
+
+# Unrelated workspace project; not part of FLAME INTELLIGENCE.
+hyperlocal-estate-ai/
+
+# Operating-system files.
+.DS_Store
+Thumbs.db

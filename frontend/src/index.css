@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --space-bg: #080f1f;
+  --space-sidebar: #060b16;
+  --space-panel: #111d32;
+  --space-panel-raised: #192940;
+  --space-input: #0c182b;
+  --space-border: #2a3a52;
+  --space-border-strong: #405975;
+  --space-primary: #0b5cad;
+  --space-primary-hover: #0e70cb;
+  --space-data-cyan: #38bdf8;
+  --space-orange: #f97316;
+  --space-text-primary: #e2e8f0;
+  --space-text-secondary: #aab8cc;
+  --space-text-muted: #8292a8;
+  --space-success: #34d399;
+  --space-error: #f87171;
+}
+
+@theme inline {
+  --color-space-bg: var(--space-bg);
+  --color-space-sidebar: var(--space-sidebar);
+  --color-space-panel: var(--space-panel);
+  --color-space-panel-raised: var(--space-panel-raised);
+  --color-space-input: var(--space-input);
+  --color-space-border: var(--space-border);
+  --color-space-border-strong: var(--space-border-strong);
+  --color-space-primary: var(--space-primary);
+  --color-space-primary-hover: var(--space-primary-hover);
+  --color-space-data: var(--space-data-cyan);
+
+  --color-white: var(--space-text-primary);
+  --color-slate-100: var(--space-text-primary);
+  --color-slate-200: #d4deeb;
+  --color-slate-300: #c1cede;
+  --color-slate-400: var(--space-text-secondary);
+  --color-slate-500: var(--space-text-muted);
+  --color-slate-600: #71839b;
+  --color-slate-700: #34465e;
+  --color-slate-800: #22334a;
+  --color-slate-900: #101c30;
+  --color-slate-950: var(--space-bg);
+
+  --color-cyan-100: #e0f2fe;
+  --color-cyan-200: #bae6fd;
+  --color-cyan-300: #7dd3fc;
+  --color-cyan-400: var(--space-data-cyan);
+  --color-cyan-500: var(--space-data-cyan);
+  --color-cyan-600: var(--space-primary);
+  --color-cyan-700: #0a4b82;
+  --color-cyan-800: #0b416f;
+  --color-cyan-900: #0b3154;
+  --color-cyan-950: #0a223b;
+
+  --color-blue-500: #1976c8;
+  --color-blue-600: var(--space-primary);
+  --color-blue-700: #084b88;
+  --color-blue-800: #21476f;
+  --color-blue-950: #0d2038;
+
+  --color-amber-200: #fed7aa;
+  --color-amber-300: #fdba74;
+  --color-amber-400: var(--space-orange);
+  --color-amber-800: #9a4b1d;
+  --color-amber-900: #572610;
+  --color-amber-950: #2a170f;
+}
+
+@layer base {
+  body {
+    background-color: var(--space-bg);
+    color: var(--space-text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border: none;
+    text-align: left;
+  }
+
+  input,
+  select,
+  textarea {
+    color: var(--space-text-primary);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--space-text-muted);
+    opacity: 1;
+  }
+
+  option {
+    background-color: var(--space-panel);
+    color: var(--space-text-primary);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--space-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--space-border-strong);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--space-text-muted);
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--space-data-cyan);
+  outline-offset: 2px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  background-color: var(--space-input);
+}
+
+::selection {
+  background: var(--space-data-cyan);
+  color: #06101d;
+}
+
+/* Subtle technical grid for existing hero panels. */
+.nasa-grid {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgba(148, 184, 204, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 184, 204, 0.025) 1px, transparent 1px);
+}
+
+.glow-blue {
+  box-shadow: 0 0 16px -8px rgba(56, 189, 248, 0.24);
+}
+
+.glow-flame {
+  box-shadow: 0 0 16px -8px rgba(249, 115, 22, 0.24);
+}

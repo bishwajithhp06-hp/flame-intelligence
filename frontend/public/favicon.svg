@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <circle cx="16" cy="16" r="15" fill="#0A1128" stroke="#0088FF" stroke-width="2"/>
+  <!-- Microgravity spherical flame icon -->
+  <circle cx="16" cy="16" r="9" fill="#FF5722" fill-opacity="0.25"/>
+  <circle cx="16" cy="16" r="6" fill="#00E5FF" fill-opacity="0.6"/>
+  <circle cx="16" cy="16" r="3" fill="#FFFFFF"/>
+  <path d="M16 4C17.5 10 22 13 22 18C22 21.31 19.31 24 16 24C12.69 24 10 21.31 10 18C10 13 14.5 10 16 4Z" fill="url(#flameGrad)" fill-opacity="0.8"/>
+  <defs>
+    <linearGradient id="flameGrad" x1="16" y1="4" x2="16" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#FF5722"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+</svg>
